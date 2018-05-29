@@ -1,6 +1,8 @@
 {
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "loglevel": "^1.6.1"
+  },
   "devDependencies": {
     "css-loader": "^0.26.2",
     "rimraf": "^2.6.1",
@@ -14,6 +16,7 @@
     "clean": "npm run clean:webapp",
     "install:webapp": "cd webapp && npm install",
     "build:webapp": "cd webapp && tsc && webpack --config webpack.conf.js",
-    "clean:webapp": "rimraf webapp/build"
+    "clean:webapp": "rimraf webapp/build",
+    
   }
 }
